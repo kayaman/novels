@@ -1,5 +1,50 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Development
+
+Bootstrapping:
+
+```sh
+pnpx create-next-app@latest --use-pnpm --typescript --eslint --app --src-dir --import-alias novels
+pnpm add -D prisma
+pnpx prisma init
+```
+
+After creating models in `schema.prisma`, run:
+
+```sh
+pnpx prisma db push
+```
+
+Installing Apollo:
+
+```sh
+pnpm add @apollo/server graphql
+pnpm add @as-integrations/next
+```
+
+Client side
+
+Installing Tailwind CSS:
+
+```sh
+pnpm install -D tailwindcss postcss autoprefixer
+pnpx tailwindcss init -p
+```
+
+```sh
+pnpm install @apollo/client graphql
+```
+
+## References
+
+- http://localhost:3000/api/graphql
+- http://localhost:5555/
+- https://www.youtube.com/watch?v=UUDR4yje92s&ab_channel=thabish
+- https://www.youtube.com/watch?v=LpwCa9BbfPY&ab_channel=thabish
+- https://github.com/Thabish-Kader/Nextjs13-graphql
+- https://supabase.com/dashboard/project/ytfciehvferdmxvvtlsp
+
 ## Getting Started
 
 First, run the development server:
