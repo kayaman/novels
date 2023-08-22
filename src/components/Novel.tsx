@@ -44,7 +44,7 @@ export const Novel = ({ novel }: Props) => {
         <p className="text-lg text-white">Authors :{novel?.authors.length}</p>
       </div>
       <Link
-        href={`${BASE_URL}/novel/${novel.id}`}
+        href={`/novel/${novel.id}`}
         className="mt-5 rounded-lg bg-orange-500 p-2"
       >
         Read More
